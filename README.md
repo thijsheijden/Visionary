@@ -1,9 +1,1 @@
-# MLLiveVisionExample
-
-This is an example of using CoreML and Vision to take a live camera feed and predict the object in frame.
-
-**Requires iOS 11**
-
-**Warning: Includes 90MB MLModel**
-
-You can replace this MLModel with your own from [https://developer.apple.com/machine-learning](https://developer.apple.com/machine-learning)
+This is an example of using CoreML and Vision to take a live camera feed and predict the object in frame. You will need to download the inceptionv3 mlmodel from Apple to use this App, or you can use your own keras of caffe model and convert those to an mlmodel.
