@@ -1,9 +1,9 @@
 //
-//  ViewController.swift
-//  MLLiveVisionTest
+//  MyViewController.swift
+//  Visionary
 //
-//  Created by Izaak Prats on 6/6/17.
-//  Copyright © 2017 IJVP. All rights reserved.
+//  Created by Thijs van der Heijden on 11/5/17.
+//  Copyright © 2017 Thijs van der Heijden. All rights reserved.
 //
 
 import UIKit
