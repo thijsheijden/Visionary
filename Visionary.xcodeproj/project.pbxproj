@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		762280A31FAFA5300084B684 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762280A21FAFA5300084B684 /* RoundedShadowView.swift */; };
+		767EEB6F1FB765180020E685 /* chars74k.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 767EEB6E1FB765180020E685 /* chars74k.mlmodel */; };
 		76FD110B1FAFB72200797465 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 76FD110A1FAFB71F00797465 /* Inceptionv3.mlmodel */; };
 		80EC7FB91EE7A25400768C9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC7FB81EE7A25400768C9A /* AppDelegate.swift */; };
 		80EC7FBB1EE7A25400768C9A /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC7FBA1EE7A25400768C9A /* MyViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		762280A21FAFA5300084B684 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		762280A81FAFA77E0084B684 /* sofiapro-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sofiapro-light.otf"; sourceTree = "<group>"; };
+		767EEB6E1FB765180020E685 /* chars74k.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = chars74k.mlmodel; sourceTree = "<group>"; };
 		76FD110A1FAFB71F00797465 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		80EC7FB51EE7A25400768C9A /* Visionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Visionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EC7FB81EE7A25400768C9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				76FD110A1FAFB71F00797465 /* Inceptionv3.mlmodel */,
+				767EEB6E1FB765180020E685 /* chars74k.mlmodel */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767EEB6F1FB765180020E685 /* chars74k.mlmodel in Sources */,
 				762280A31FAFA5300084B684 /* RoundedShadowView.swift in Sources */,
 				76FD110B1FAFB72200797465 /* Inceptionv3.mlmodel in Sources */,
 				80EC7FBB1EE7A25400768C9A /* MyViewController.swift in Sources */,

@@ -24,6 +24,7 @@ class MyViewController: UIViewController {
         prepareCaptureSession()
     }
     
+    //Setting layers as background and moving the label and roundedview to the front.
     fileprivate func setLayerAsBackground(layer: CALayer) {
         view.layer.addSublayer(layer)
         layer.frame = view.bounds
@@ -31,6 +32,7 @@ class MyViewController: UIViewController {
         view.bringSubview(toFront: roundedView)
     }
     
+    //Creating the capturesession
     fileprivate func prepareCaptureSession() {
         let captureSession = AVCaptureSession()
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
@@ -52,21 +54,23 @@ class MyViewController: UIViewController {
         captureSession.startRunning()
     }
     
+    //Getting a prediction from the model
     fileprivate func predict(_ pixelBuffer: CVPixelBuffer) {
-        let model = try! VNCoreMLModel(for: Inceptionv3().model)
+        let model = try! VNCoreMLModel(for: chars74k().model)
         let request = VNCoreMLRequest(model: model, completionHandler: didGetPredictionResults)
         let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:])
         try! handler.perform([request])
     }
     
+    //Showing the highest result on the resultLabel
     fileprivate func didGetPredictionResults(request: VNRequest, error: Error?) {
         guard let results = request.results as? [VNClassificationObservation] else {
-            resultLabel.text = "??🙀??"
+            resultLabel.text = "????"
             return
         }
         
         guard results.count != 0 else {
-            resultLabel.text = "??🙀??"
+            resultLabel.text = "????"
             return
         }
         
