@@ -4,7 +4,7 @@
 //
 //  Created by Thijs van der Heijden on 11/5/17.
 //  Copyright © 2017 Thijs van der Heijden. All rights reserved.
-//
+//  Version 0.8.0
 
 import UIKit
 import MobileCoreServices
